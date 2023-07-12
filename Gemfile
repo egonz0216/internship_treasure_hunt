@@ -67,4 +67,4 @@ end
 
 gem "rspec-rails", "~> 6.0"
 
-gem 'jquery-rails'
+gem 'slim'

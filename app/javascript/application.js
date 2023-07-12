@@ -1,4 +1,3 @@
-// Configure your import map in config/importmap.rb. Read more: https://github.com/rails/importmap-rails
 import "@hotwired/turbo-rails"
 import "controllers"
 
@@ -10,14 +9,10 @@ const treasure = (location) => {
     if(gameEnded === true){
         return
     }
-    // clicks=(clicks + 1)
-    // document.getElementById("totalClicks").innerHTML = clicks
     if(location === jewels){
         gameEnded = true
         document.getElementById(location).innerHTML = "👑"
-        setTimeout(() => {return alert("You win!")}, 100);
-        //return alert("You win!")
-           
+        setTimeout(() => {return alert("You win!")}, 100);           
     }
     else if(location === boom || location === boom2){
         gameEnded = true
@@ -36,14 +31,6 @@ const treasure = (location) => {
     }
 }
 
-// const computerMove = () => {
-//     var location = Math.floor(Math.random() * 16);
-//     treasure(location);
-// }
-
 var jewels=Math.floor(Math.random() * 16)
 var boom=Math.floor(Math.random() * 16)
 var boom2=Math.floor(Math.random() * 16)
-// if(jewels === boom) {
-//     boom=(15-boom)
-// }
