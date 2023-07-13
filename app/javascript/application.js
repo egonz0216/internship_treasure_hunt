@@ -1,11 +1,10 @@
-import "@hotwired/turbo-rails"
-import "controllers"
-
-var gameEnded = false
-var clicks = 0
-var alarms = 0
-
 const treasure = (location) => {
+    var gameEnded = false
+    var clicks = 0
+    var alarms = 0
+    var jewels=Math.floor(Math.random() * 16)
+    var boom=Math.floor(Math.random() * 16)
+    var boom2=Math.floor(Math.random() * 16)
     if(gameEnded === true){
         return
     }
@@ -30,7 +29,3 @@ const treasure = (location) => {
         }
     }
 }
-
-var jewels=Math.floor(Math.random() * 16)
-var boom=Math.floor(Math.random() * 16)
-var boom2=Math.floor(Math.random() * 16)
