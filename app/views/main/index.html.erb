@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<%= javascript_include_tag('application.js') %>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" as="script">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin as="script">
+  <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-tools/1.2.7/jquery.tools.min.js"></script>
+</head>
+<body>
+  <h1>Treasure Hunt Game</h1>
+  <h2>Avoid the Dragon</h2>
+  <img class="awake" id="dragon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2dIBNYXODWRaATYoN7oNk7_WTUqmdTQJvNA&usqp=CAU" alt="sleeping dragon" />
+  <ul class="rules">
+    <li>Click the boxes to reveal what is on the map.</li>
+    <li>If you click on the treasure, you sneak away with it and <span class="rulesWin">win</span>.</li>
+    <li>If you click on the dragon, he wakes up and you <span class="rulesLose">lose</span>.</li>
+    <li>If you click on 5 alarms, the dragon wakes up and you <span class="rulesLose">lose</span>.</li>
+  </ul>
+  <br/>
+  <table border="5" class="gameMap" style="width:75%">
+    <tr>
+      <td id="0" onclick="treasure(0)">?</td>
+      <td id="1" onclick="treasure(1)">?</td>
+      <td id="2" onclick="treasure(2)">?</td>
+      <td id="3" onclick="treasure(3)">?</td>
+    </tr>
+    <tr>
+      <td id="4" onclick="treasure(4)">?</td>
+      <td id="5" onclick="treasure(5)">?</td>
+      <td id="6" onclick="treasure(6)">?</td>
+      <td id="7" onclick="treasure(7)">?</td>
+    </tr>
+    <tr>
+      <td id="8" onclick="treasure(8)">?</td>
+      <td id="9" onclick="treasure(9)">?</td>
+      <td id="10" onclick="treasure(10)">?</td>
+      <td id="11" onclick="treasure(11)">?</td>
+    </tr>
+    <tr>
+      <td id="12" onclick="treasure(12)">?</td>
+      <td id="13" onclick="treasure(13)">?</td>
+      <td id="14" onclick="treasure(14)">?</td>
+      <td id="15" onclick="treasure(15)">?</td>
+    </tr>
+  </table>
+  <br/>
+
+  <button type="button" onclick="location.reload()">Restart Game</button>
+  <br/>
+  <h3>Total Alarms</h3>
+  <h3 id="totalAlarms">0</h3>
+  <h3>Out of 5</h3>
+  <br/>
+</body>
+<footer>&copy; Ernesto & Aubrey | 
+  <a href="https://www.learnacademy.org/" target="_blank">Click here to go to the LEARN website.</a>
+</footer>
+</html>
