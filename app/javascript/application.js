@@ -17,7 +17,7 @@ const treasure = (location) => {
   else if(location === boom || location === boom2){
     gameEnded = true
     $("#" + location).html("🐲")
-    setTimeout(() => { alert("You Lose!"); }, 100)
+    setTimeout(() => { alert("You Lose!" ); }, 100)
   }
   else {
     alarms=(alarms +1);

@@ -15,35 +15,36 @@ head
 body 
   h1 Treasure Hunt Game 
   h2 Avoid waking the Dragon
-  img class="awake" id="dragon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2dIBNYXODWRaATYoN7oNk7_WTUqmdTQJvNA&usqp=CAU" alt="sleeping dragon"
+  img class="awake" id="dragon" src="https://img.myloview.com/murals/illustration-of-sleeping-dragon-400-47143510.jpg" alt="sleeping dragon"
   ul class="rules"
     li Click the boxes to reveal what is on the map.
-    li If you click on the treasure, you sneak away with it and win!
-    li If you click on 5 alarms, the dragon wakes up and you lose!
-    li If you click on the dragon, he wakes up and you lose!
+    li If you click on the treasure, you sneak away with it and <span class="win">WIN!</span>
+    li If you click on 5 alarms, the dragon wakes up and you <span class="lose">LOSE</span>
+    li If you click on the dragon, he wakes up and you <span class="lose">LOSE!</span>
   br
-  table.gameMap[border="5" style="width:75%"]
+  table.gameMap[border="5" ]
     tr
-      td#0 onclick="treasure(0)" ?
-      td#1 onclick="treasure(1)" ?
-      td#2 onclick="treasure(2)" ?
-      td#3 onclick="treasure(3)" ?
+      td#0 onclick="treasure(0)" <span class="initial-value">?</span>
+      td#1 onclick="treasure(1)" <span class="initial-value">?</span>
+      td#2 onclick="treasure(2)" <span class="initial-value">?</span>
+      td#3 onclick="treasure(3)" <span class="initial-value">?</span>
     tr
-      td#4 onclick="treasure(4)" ?
-      td#5 onclick="treasure(5)" ?
-      td#6 onclick="treasure(6)" ?
-      td#7 onclick="treasure(7)" ?
+      td#4 onclick="treasure(4)" <span class="initial-value">?</span>
+      td#5 onclick="treasure(5)" <span class="initial-value">?</span>
+      td#6 onclick="treasure(6)" <span class="initial-value">?</span>
+      td#7 onclick="treasure(7)" <span class="initial-value">?</span>
     tr
-      td#8 onclick="treasure(8)" ?
-      td#9 onclick="treasure(9)" ?
-      td#10 onclick="treasure(10)" ?
-      td#11 onclick="treasure(11)" ?
+      td#8 onclick="treasure(8)" <span class="initial-value">?</span>
+      td#9 onclick="treasure(9)" <span class="initial-value">?</span>
+      td#10 onclick="treasure(10)" <span class="initial-value">?</span>
+      td#11 onclick="treasure(11)" <span class="initial-value">?</span>
     tr
-      td#12 onclick="treasure(12)" ?
-      td#13 onclick="treasure(13)" ?
-      td#14 onclick="treasure(14)" ?
-      td#15 onclick="treasure(15)" ?
-  button[type="button" onclick="location.reload()"] Restart Game
+      td#12 onclick="treasure(12)" <span class="initial-value">?</span>
+      td#13 onclick="treasure(13)" <span class="initial-value">?</span>
+      td#14 onclick="treasure(14)" <span class="initial-value">?</span>
+      td#15 onclick="treasure(15)" <span class="initial-value">?</span>
+  br
+  button.button-3[type="button" onclick="location.reload()"] Restart Game
   br
   h3 Total Alarms 
   h3#totalAlarms 0
