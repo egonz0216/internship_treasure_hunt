@@ -1,0 +1,54 @@
+doctype html
+html lang="en"
+= javascript_include_tag('application.js')
+
+head
+  meta charset="UTF-8"
+  meta http-equiv="X-UA-Compatible" content="IE=edge"
+  meta name="viewport" content="width=device-width, initial-scale=1.0"
+  title
+    | Document
+  link rel="preconnect" href="https://fonts.googleapis.com" as="script"
+  link rel="preconnect" href="https://fonts.gstatic.com" 
+  link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&display=swap" rel="stylesheet"
+  script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-tools/1.2.7/jquery.tools.min.js"
+body 
+  h1 Treasure Hunt Game 
+  h2 Avoid waking the Dragon
+  img class="awake" id="dragon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2dIBNYXODWRaATYoN7oNk7_WTUqmdTQJvNA&usqp=CAU" alt="sleeping dragon"
+  ul class="rules"
+    li Click the boxes to reveal what is on the map.
+    li If you click on the treasure, you sneak away with it and win!
+    li If you click on 5 alarms, the dragon wakes up and you lose!
+    li If you click on the dragon, he wakes up and you lose!
+  br
+  table.gameMap[border="5" style="width:75%"]
+    tr
+      td#0 onclick="treasure(0)" ?
+      td#1 onclick="treasure(1)" ?
+      td#2 onclick="treasure(2)" ?
+      td#3 onclick="treasure(3)" ?
+    tr
+      td#4 onclick="treasure(4)" ?
+      td#5 onclick="treasure(5)" ?
+      td#6 onclick="treasure(6)" ?
+      td#7 onclick="treasure(7)" ?
+    tr
+      td#8 onclick="treasure(8)" ?
+      td#9 onclick="treasure(9)" ?
+      td#10 onclick="treasure(10)" ?
+      td#11 onclick="treasure(11)" ?
+    tr
+      td#12 onclick="treasure(12)" ?
+      td#13 onclick="treasure(13)" ?
+      td#14 onclick="treasure(14)" ?
+      td#15 onclick="treasure(15)" ?
+  button[type="button" onclick="location.reload()"] Restart Game
+  br
+  h3 Total Alarms 
+  h3#totalAlarms 0
+  h3 Out of 5
+  br
+footer
+  | &copy; Ernesto & Aubrey |
+  a href="https://www.learnacademy.org/" target="_blank" Click here to go to the LEARN website.

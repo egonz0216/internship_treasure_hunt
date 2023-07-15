@@ -1,11 +1,13 @@
 body{
   text-align: center;
-  background-image: linear-gradient(to right top, #f3f58a, #eff087, #eaec83, #e6e780, #e2e37d, #e0e177, #dfdf71, #dddd6b, #dddd60, #dcde54, #dcde46, #dbde37);
+  background-image: linear-gradient(#99F2C8, #1F4037);
 }
 .gameMap{
   margin-left: auto;
   margin-right: auto;
   border-style: ridge;
+  height: 400px;
+  width: 400px;
 }
 .rules{
   list-style-position: inside;
@@ -17,7 +19,8 @@ h2{
   color: darkred;
 }
 h3{
-  color: darkred;
+  color: rgb(39, 8, 8);
+  font-size:x-large;
 }
 *{
   font-family: 'Shantell Sans', cursive;
@@ -54,9 +57,12 @@ h1 {
   animation-timing-function: ease-in-out;
 }
 
+td {
+  width: 100px;
+}
 td:hover {
-  background-color: white;
-  color: red;
+  background-color: rgb(174, 151, 34);
+  color: rgb(0, 255, 42);
 }
 
 @keyframes shake {
